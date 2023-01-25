@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\PluggedIn-V1.6.props" />
+</Project>
