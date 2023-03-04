@@ -27,7 +27,7 @@ using PluggedIn_V1._6.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a2964add15feb6dc9ea4f094be56eedce9eeb365", @"/Views/Register/index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9995e866645adf06393a68c42131d75c54ee014f", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4066436febb28c14e04f63bd678d2b9fb74d3dee", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Register_index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<PluggedIn_V1._6.Models.userModel>
     #nullable disable

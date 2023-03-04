@@ -24,5 +24,22 @@ namespace PluggedIn_V1._6.Services
         {
             return usersDAO.AddUserNameAndPassword(user);
         }
+
+        public bool AddUserContact(userContact user)
+        {
+            return usersDAO.AddUserContactInfo(user);
+        }
+
+
+        //public bool RemoveUser(userModel user) { }
+
+        //public bool FindStore(storeInfo storeInfo)
+        //{
+
+
+        //    return usersDAO.GetNearByLocations(current);
+        //}
+
+
     }
 }

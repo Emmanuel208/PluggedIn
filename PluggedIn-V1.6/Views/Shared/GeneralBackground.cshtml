@@ -1,0 +1,88 @@
+﻿
+
+    @{
+    ViewData["Title"] = "Home Page";
+    
+    }
+
+
+    <style>
+
+    header.theme-light {
+        background-color: var(--white-000)
+    }
+
+    #btn-cta {
+        position: absolute;
+        width: 88px;
+        height: 24px;
+        left: 1213px;
+        top: 14px;
+        padding: 5px 10px;
+        display: inline-block;
+        color: forestgreen;
+        text-decoration: none;
+        overflow: hidden;
+        transition: 0.2s;
+        border-radius: 5px;
+    }
+
+    </style>
+
+
+<nav class="theme-light">
+    <div class="container-menu menu-desktop">
+        <a href="#" class="brand">
+            <img src="https://lunevedy.com/ui/assets/img/website-logo-sample.png" alt="Sample website logo">
+        </a>
+
+        <div class="container-menu-links">
+
+            <div class="nav-toggle">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+
+            <ul class="links-wrapper">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a class="btn btn-solid" id="btn-cta" href="#"><span>Sign in</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- header starts here -->
+
+<header class="text-center-desktop text-center-mobile theme-light">
+
+    <div class="container-text">
+
+        <h1>Nice heading here</h1>
+        <h2>A sub-heading that motivates visitors to continue reading.</h2>
+    </div>
+
+    <div class="container-btn">
+        <a href="#" class="btn btn-solid"><span>Order now</span></a>
+        <a href="#" class="btn btn-outline"><span>Learn more</span></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <figure>
+        <img src="https://lunevedy.com/ui/assets/img/1024x618-cheesecake.jpg" alt="Placeholder image">
+    </figure>
+</header>
+<!-- header ends here -->
+@RenderBody();

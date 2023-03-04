@@ -1,33 +1,78 @@
 ﻿@model PluggedIn_V1._6.Models.userModel
 
-<h4>Login</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="ProcessLogin">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-          
-            <div class="form-group">
-                <label asp-for="userName" class="control-label"></label>
-                <input asp-for="userName" class="form-control" />
-                <span asp-validation-for="userName" class="text-danger"></span>
+
+
+<body>
+   @* <nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center text-white" href="/">
+                  <h3 class="font-weight-bolder mb-0">PLUGGED-IN</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="lnr lnr-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-nav-header">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="index">Home</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="index">Find Loaction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Contact" asp-action="index">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="side-search-open" class="nav-link" href="#">
+                            <span class="lnr lnr-magnifier"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item only-desktop">
+                        <a class="nav-link" id="side-nav-open" href="#">
+                            <span class="lnr lnr-menu"></span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="form-group">
-                <label asp-for="password" class="control-label"></label>
-                <input asp-for="password" class="form-control"  type ="password"/>
-                <span asp-validation-for="password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Login" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
+    </nav>*@
+    <h4>Login</h4>
+    <hr />
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="ProcessLogin">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="userName" class="control-label"></label>
+                    <input asp-for="userName" class="form-control" />
+                    <span asp-validation-for="userName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="password" class="control-label"></label>
+                    <input asp-for="password" class="form-control" type="password" />
+                    <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Login" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+
+
+</body>
